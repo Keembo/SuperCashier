@@ -159,7 +159,7 @@ class Transaction:
         elif total > 200000.0:
             discount = total * 0.05
             total = total * 0.95
-        return total
+        return total, discount
 
 # Menampilkan hasil transaksi
     def display_items(self):
