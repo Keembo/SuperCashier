@@ -18,7 +18,7 @@ class Transaction:
         Menambahkan input pilihan untuk memudahkan proses penambahan barang dan menentukan proses transaksi
         """
         while True:
-            print("1. Tambah barang\n2. Periksa Transaksi") # Memberi pilihan untuk menambah barang atau memeriksa transaksi
+            print("1. Tambah barang\n2. Periksa Transaksi\n3. Keluar") # Memberi pilihan untuk menambah barang atau memeriksa transaksi
             selection = input("Pilih no: ")
             try:
                 if selection == '1': # Opsi menambahkan barang
@@ -34,6 +34,7 @@ class Transaction:
                     
                      # Memasukan barang kedalam list
                     self.items.append([item_name, item_qty, item_price])
+
                 elif selection == '2': # Opsi memeriksa transaksi
                     # Menjalan check_order untuk memeriksa transaksi
                     check_result = self.check_order()
@@ -48,8 +49,12 @@ class Transaction:
                             if display_selection.lower() == 'y':
                                 print(self.display_items())
                             break
+
+                elif selection == '3':  # Opsi Keluar
+                    break
+
                 else:
-                    print("Kesalahan Input, pilih 1 atau 2.")
+                    print("Kesalahan Input, pilih 1, 2 atau 3.")
             except ValueError as e:
                 print("Mohon coba kembali:", e)
 
@@ -154,7 +159,7 @@ class Transaction:
         elif total > 200000.0:
             discount = total * 0.05
             total = total * 0.95
-        return total, discount
+        return total
 
 # Menampilkan hasil transaksi
     def display_items(self):
