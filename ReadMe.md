@@ -1,6 +1,6 @@
 # Project SuperCashier
 
-Project SuperCashier adalah aplikasi kasir sederhana yang dibuat menggunakan bahasa pemrograman Python. Aplikasi ini dirancang untuk menangani transaksi penjualan pada toko ritel.
+Project SuperCashier adalah aplikasi kasir sederhana yang dibuat menggunakan bahasa pemrograman Python. Aplikasi ini dirancang untuk supaya pembeli dapat memasukan transaksi penjualan dengan sendirinya. 
 
 # Tujuan Pengerjaan Project
 
@@ -14,12 +14,6 @@ Project SuperCashier adalah aplikasi kasir sederhana yang dibuat menggunakan bah
 # Deskripsi Task
 
 Modul `transaction.py` berisi kelas `Transaction` yang berfungsi untuk membuat dan mengelola transaksi. Setiap transaksi berisi sejumlah barang dengan harga dan kuantitas masing-masing.
-
-# Cara Menggunakan Program
-
-1. Download file `transaction.py`.
-2. Buka terminal/Jupyter notebook dan sesuaikan lokasi direktori lokal.
-3. Jalankan modul `transaction.py` di terminal untuk memulai aplikasi.
 
 ## Alur Program / Flowchart
 
@@ -112,6 +106,12 @@ Fungsi `total_price` akan menghitung total harga dari semua item dalam transaksi
 ```python
 print(transaksi.display_items())
 ```
+
+# Cara Menggunakan Program
+
+1. Download file `transaction.py`.
+2. Buka terminal/Jupyter notebook dan sesuaikan lokasi direktori lokal.
+3. Jalankan modul `transaction.py` di terminal untuk memulai aplikasi.
 
 Fungsi `display_items` akan menampilkan detail transaksi dalam bentuk tabel yang rapi, dengan informasi tentang nama pembeli, item, jumlah, dan total harga.
 
