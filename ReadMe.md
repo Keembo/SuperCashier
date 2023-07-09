@@ -1,24 +1,25 @@
-# SuperCashier: Sebuah Panduan Transaksi yang Mudah dan Mendidik
+# Project SuperCashier
 
-Hai, rekan belajar! 🙌
+Project SuperCashier adalah aplikasi kasir sederhana yang dibuat menggunakan bahasa pemrograman Python. Aplikasi ini dirancang untuk menangani transaksi penjualan pada toko ritel.
 
-Selamat datang di dunia `SuperCashier`, sebuah modul yang menyenangkan dan edukatif tentang pengelolaan transaksi penjualan. Kita akan melihat bagaimana paket ini dengan mudah mengelola barang penjualan, melakukan berbagai modifikasi transaksi, dan menampilkan semua data dengan cara yang rapi dan mudah dimengerti. Siap terjun? Mari kita mulai!
+# Tujuan Pengerjaan Project
 
-## Latar Belakang
+1. Membuat aplikasi kasir sederhana yang dapat:
+    - Menambahkan barang baru ke dalam transaksi.
+    - Menghitung total harga barang dalam transaksi.
+    - Mengeluarkan struk transaksi.
+2. Membuat program dengan bahasa pemrograman Python.
+3. Mengaplikasikan penulisan kode yang bersih (clean code), mengacu pada PEP 8.
 
-`SuperCashier` adalah sebuah modul Python yang diciptakan untuk memudahkan proses pencatatan dan pengelolaan transaksi penjualan. Dengan menggunakan `SuperCashier`, kita dapat menginput, memodifikasi, hingga menghapus item transaksi dengan mudah dan efisien.
+# Deskripsi Task
 
-## Requirements / Objectives
+Modul `transaction.py` berisi kelas `Transaction` yang berfungsi untuk membuat dan mengelola transaksi. Setiap transaksi berisi sejumlah barang dengan harga dan kuantitas masing-masing.
 
-Berikut adalah beberapa fitur yang disediakan oleh `SuperCashier`:
+# Cara Menggunakan Program
 
-- Menambahkan item ke dalam transaksi
-- Memeriksa detail transaksi
-- Memodifikasi detail item
-- Menghapus item dari transaksi
-- Mereset transaksi
-- Menghitung harga total transaksi
-- Menampilkan transaksi
+1. Download file `transaction.py`.
+2. Buka terminal/Jupyter notebook dan sesuaikan lokasi direktori lokal.
+3. Jalankan modul `transaction.py` di terminal untuk memulai aplikasi.
 
 ## Alur Program / Flowchart
 
