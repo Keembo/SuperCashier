@@ -130,7 +130,7 @@ class Transaction:
         self.items = []
         print("Transaksi sudah di reset.")
 
-# Memerikan transaksi
+# Memeriksa transaksi
     def check_order(self):
         if not self.items:
             return "Tidak ada barang dalam daftar."
