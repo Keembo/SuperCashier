@@ -32,10 +32,10 @@ Penjelasan flow:
 
 Berikut beberapa fungsi penting dalam `SuperCashier`:
 
-- `add_barang`: fungsi untuk menambahkan barang ke dalam transaksi.
+- `add_item`: fungsi untuk menambahkan barang ke dalam transaksi.
 - `check_order`: fungsi untuk memeriksa detail barang dalam transaksi.
-- `update_barang_name`, `update_barang_qty`, `update_barang_price`: fungsi untuk memodifikasi detail barang.
-- `delete_barang`: fungsi untuk menghapus barang dari transaksi.
+- `update_item_name`, `update_item_qty`, `update_item_price`: fungsi untuk memodifikasi detail barang.
+- `delete_item`: fungsi untuk menghapus barang dari transaksi.
 - `reset_transaction`: fungsi untuk mereset transaksi.
 - `total_price`: fungsi untuk menghitung total harga transaksi.
 - `display_items`: fungsi untuk menampilkan transaksi.
@@ -55,10 +55,10 @@ Ini akan membuat objek transaksi baru. Dalam prosesnya, kita akan diminta untuk 
 ### Menambahkan barang ke Dalam Transaksi
 
 ```python
-transaksi.add_barang()
+transaksi.add_item()
 ```
 
-Fungsi `add_barang` digunakan untuk menambahkan barang ke dalam transaksi. Kita akan diminta untuk memasukkan nama barang, jumlah, dan harganya. Selain itu, ada juga pilihan untuk memeriksa transaksi atau keluar dari proses.
+Fungsi `add_item` digunakan untuk menambahkan barang ke dalam transaksi. Kita akan diminta untuk memasukkan nama barang, jumlah, dan harganya. Selain itu, ada juga pilihan untuk memeriksa transaksi atau keluar dari proses.
 
 ### Memeriksa Detail Transaksi
 
@@ -71,20 +71,20 @@ Fungsi `check_order` akan memeriksa detail barang dalam transaksi. Jika ada kesa
 ### Memodifikasi Detail barang
 
 ```python
-transaksi.update_barang_name()
-transaksi.update_barang_qty()
-transaksi.update_barang_price()
+transaksi.update_item_name()
+transaksi.update_item_qty()
+transaksi.update_item_price()
 ```
 
-Kita bisa memodifikasi nama, kuantitas, dan harga barang dengan fungsi `update_barang_name`, `update_barang_qty`, dan `update_barang_price` secara berurutan.
+Kita bisa memodifikasi nama, kuantitas, dan harga barang dengan fungsi `update_item_name`, `update_item_qty`, dan `update_item_price` secara berurutan.
 
 ### Menghapus barang dari Transaksi
 
 ```python
-transaksi.delete_barang()
+transaksi.delete_item()
 ```
 
-Fungsi `delete_barang` akan menghapus barang dari daftar transaksi. Kita akan diminta untuk memilih barang mana yang ingin dihapus.
+Fungsi `delete_item` akan menghapus barang dari daftar transaksi. Kita akan diminta untuk memilih barang mana yang ingin dihapus.
 
 ### Mereset Transaksi
 
@@ -116,7 +116,7 @@ Fungsi `display_items` akan menampilkan detail transaksi dalam bentuk tabel yang
 Input:
 ```python
 transaksi = Transaction()
-transaksi.add_barang()
+transaksi.add_item()
 ```
 ```
 Nilai yang di input:
@@ -131,7 +131,7 @@ Output:
 Input:
 ```python
 transaksi = Transaction()
-transaksi.delete_barang()
+transaksi.delete_item()
 ```
 ```
 Nilai yang di delete:
